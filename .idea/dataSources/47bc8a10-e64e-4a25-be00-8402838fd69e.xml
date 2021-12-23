@@ -975,24 +975,25 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="283" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="284" parent="275" name="users"/>
+    <table id="284" parent="275" name="users">
+      <Engine>MyISAM</Engine>
+    </table>
     <column id="285" parent="284" name="id">
-      <DataType>int|0s</DataType>
+      <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="286" parent="284" name="name">
-      <DataType>varchar(45)|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="286" parent="284" name="age">
+      <DataType>tinyint|0s</DataType>
       <Position>2</Position>
     </column>
     <column id="287" parent="284" name="lastName">
-      <DataType>varchar(45)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="288" parent="284" name="age">
-      <DataType>int|0s</DataType>
+    <column id="288" parent="284" name="name">
+      <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
     <key id="289" parent="284" name="PRIMARY">
